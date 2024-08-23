@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lancamento.lancamentoController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ChoiceBox fx:id="boxAnos" prefWidth="100.0" translateX="-385.0" translateY="-315.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></ChoiceBox>
+      <Label text="Ano" translateX="-465.0" translateY="-357.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="tabelaLancamento" prefHeight="474.0" prefWidth="749.0" translateX="20.0" translateY="-429.0">
+        <columns>
+          <TableColumn fx:id="dataaColumn" prefWidth="126.0" text="data" />
+          <TableColumn fx:id="debitoColumn" prefWidth="126.0" text="débito" />
+           <TableColumn fx:id="creditoColumn" prefWidth="126.0" text="crédito" />
+           <TableColumn fx:id="valorColumn" prefWidth="126.0" text="Valor" />
+           <TableColumn fx:id="historicoColumn" prefWidth="126.0" text="Histórico" />
+           <TableColumn fx:id="complementoColumn" prefWidth="126.0" text="Complemento" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="-491.0" left="211.0" />
+         </VBox.margin>
+      </TableView>
+      <Line endX="700.0" rotate="90.0" startX="-100.0" translateX="-250.0" translateY="-30.0" />
+      <Line endX="200.0" startX="-550.0" translateX="125.0" translateY="20.0" />
+      <DatePicker fx:id="boxData" translateX="-70.0" translateY="20.0">
+         <VBox.margin>
+            <Insets bottom="-42.0" />
+         </VBox.margin>
+      </DatePicker>
+      <Label text="Data" translateX="-200.0" translateY="20.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="boxDebito" translateX="323.0" translateY="65.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="850.0" />
+         </VBox.margin>
+      </TextField>
+      <Label layoutX="496.0" layoutY="464.0" text="Débito" translateX="-200.0" translateY="70.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="496.0" layoutY="520.0" text="Crédito" translateX="-200.0" translateY="120.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="496.0" layoutY="482.0" text="Valor" translateX="-200.0" translateY="175.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin></Label>
+      <Label layoutX="496.0" layoutY="519.0" text="Histórico" translateX="-200.0" translateY="225.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin></Label>
+      <Button fx:id="botaoEnviar" mnemonicParsing="false" onAction="#enviarDados" text="Enviar" translateX="410.0" translateY="275.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" />
+         </VBox.margin>
+      </Button>
+      <Label layoutX="496.0" layoutY="481.0" text="Complem" translateX="-200.0" translateY="280.0">
+         <VBox.margin>
+            <Insets bottom="-37.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="boxCredito" translateX="323.0" translateY="115.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="850.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField layoutX="30.0" layoutY="484.0" translateX="-200.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="850.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="boxValor" translateX="323.0" translateY="173.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="850.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="boxHistorico" layoutX="30.0" layoutY="484.0" translateX="323.0" translateY="222.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="850.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="boxComplemento" layoutX="30.0" layoutY="484.0" translateX="323.0" translateY="275.0">
+         <VBox.margin>
+            <Insets bottom="-45.0" right="500.0" />
+         </VBox.margin>
+      </TextField>
+   </children>
+</VBox>
